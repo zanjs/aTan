@@ -1,7 +1,29 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "lint": "eslint packages/*/src/**/*.js --fix",
+    "docs": "cd website && docusaurus-build",
+    "docs:serve": "cd website && docusaurus-start",
+    "clear-all": "rimraf package-lock.json packages/*/node_modules packages/*/package-lock.json",
+    "bootstrap:ci": "lerna bootstrap --npm-client=yarn",
+    "bootstrap:lerna": "lerna bootstrap -- --ignore-engines",
+    "bootstrap": "npm-run-all clear-all bootstrap:lerna",
+    "build": "lerna run build",
+    "build:docs": "node ./build/docs.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "release:lerna": "lerna publish --force-publish=* --exact --skip-temp-tag",
+    "release:beta": "lerna publish --force-publish=* --exact --skip-temp-tag  --preid=beta --npm-tag=beta",
+    "release": "npm-run-all build release:lerna && npm run changelog",
+    "test": "lerna run --scope eslint-plugin-taro  --scope @tarojs/transformer-wx test"
+  },
   "devDependencies": {
-    "lerna": "^3.8.5"
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "lerna": "^3.8.5",
+    "rollup-plugin-babel": "^4.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
   }
 }
