@@ -1,4 +1,6 @@
 import foo from './foo.js';
-export default function () {
+export function log() {
   console.log(foo);
 }
+
+export default log

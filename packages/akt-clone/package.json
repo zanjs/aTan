@@ -3,8 +3,10 @@
   "version": "0.0.8-alpha.0",
   "description": "",
   "main": "./dist/index.js",
+  "typings": "types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "scripts": {
     "build": "rollup -c rollup.config.js",
