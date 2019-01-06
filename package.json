@@ -22,8 +22,5 @@
     "rollup-plugin-babel": "^4.2.0",
     "rollup-plugin-node-resolve": "^4.0.0"
   },
-  "dependencies": {
-    "@akt/clone": "0.0.5-alpha.0",
-    "lodash": "^4.17.11"
-  }
+  "dependencies": {}
 }
