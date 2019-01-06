@@ -1,0 +1,13 @@
+{
+  "name": "@akt/type",
+  "version": "0.0.1",
+  "description": "typs",
+  "main": "./dist/index.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "clear": "rimraf dist"
+  },
+  "author": "Julian",
+  "license": "MIT"
+}
