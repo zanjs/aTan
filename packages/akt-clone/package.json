@@ -20,6 +20,7 @@
     "rimraf": "^2.6.3"
   },
   "dependencies": {
+    "@akt/type": "^0.0.1",
     "rollup": "^1.0.2"
   }
 }
