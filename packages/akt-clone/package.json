@@ -2,7 +2,7 @@
   "name": "@akt/clone",
   "version": "0.0.7-alpha.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "files": [
     "dist"
   ],

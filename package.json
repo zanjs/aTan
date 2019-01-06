@@ -7,7 +7,7 @@
     "bootstrap:ci": "lerna bootstrap --npm-client=yarn",
     "bootstrap:lerna": "lerna bootstrap -- --ignore-engines",
     "bootstrap": "npm-run-all clear-all bootstrap:lerna",
-    "pub":"lerna publish",
+    "pub": "lerna publish",
     "build": "lerna run build",
     "release:lerna": "lerna publish --force-publish=* --exact --skip-temp-tag",
     "release:beta": "lerna publish --force-publish=* --exact --skip-temp-tag  --preid=beta --npm-tag=beta",
@@ -23,5 +23,7 @@
     "rollup-plugin-babel": "^4.2.0",
     "rollup-plugin-node-resolve": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@akt/clone": "0.0.7-alpha.0"
+  }
 }
