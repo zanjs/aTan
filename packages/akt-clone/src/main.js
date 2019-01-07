@@ -12,7 +12,7 @@ function isClone(x) {
 }
 
 // 递归
-export function clone(x) {
+export function CloneRecursive(x) {
     if (!isClone(x)) return x;
 
     const t = type(x);
@@ -23,14 +23,14 @@ export function clone(x) {
         res = [];
         for (let i = 0; i < x.length; i++) {
             // 避免一层死循环 a.b = a
-            res[i] = x[i] === x ? res: clone(x[i]);
+            res[i] = x[i] === x ? res: Clone(x[i]);
         }
     } else if (t === 'object') {
         res = {};
         for(let key in x) {
             if (hasOwnProp(x, key)) {
                 // 避免一层死循环 a.b = a
-                res[key] = x[key] === x ? res : clone(x[key]);
+                res[key] = x[key] === x ? res : Clone(x[key]);
             }
         }
     }
@@ -39,7 +39,7 @@ export function clone(x) {
 }
 
 // 通过JSON深拷贝
-export function cloneJSON(x, errOrDef = true) {
+export function CloneJSON(x, errOrDef = true) {
     if (!isClone(x)) return x;
 
     try {
@@ -48,14 +48,14 @@ export function cloneJSON(x, errOrDef = true) {
         if (errOrDef === true) {
             throw e;
         } else {
-            console.error('cloneJSON error: ' + e.message);
+            console.error('CloneJSON error: ' + e.message);
             return errOrDef;
         }
     }
 }
 
 // 循环
-export function cloneLoop(x) {
+export function CloneLoop(x) {
     const t = type(x);
 
     let root = x;
@@ -129,7 +129,7 @@ export function cloneLoop(x) {
     return root;
 }
 
-const UNIQUE_KEY = 'xx clone' + (new Date).getTime();
+const UNIQUE_KEY = 'xx Clone' + (new Date).getTime();
 
 // weakmap：处理对象关联引用
 function SimpleWeakmap (){
@@ -164,7 +164,7 @@ function getWeakMap(){
     return result;
 }
 
-export function cloneForce(x) {
+export function CloneForce(x) {
     const uniqueData = getWeakMap();
 
     const t = type(x);

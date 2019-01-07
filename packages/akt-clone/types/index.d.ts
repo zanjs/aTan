@@ -1,10 +1,4 @@
-declare namespace Clone { 
-  export function clone(s:any): any
-  export function cloneJSON(s:any): any
-  export function cloneLoop(s:any): any
-  export function cloneForce(s:any): any
-}
-
-export {
-  Clone
-}
+export function CloneRecursive(s:any): any
+export function CloneJSON(s:any): any
+export function CloneLoop(s:any): any
+export function CloneForce(s:any): any
