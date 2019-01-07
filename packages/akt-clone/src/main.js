@@ -23,14 +23,14 @@ export function CloneRecursive(x) {
         res = [];
         for (let i = 0; i < x.length; i++) {
             // 避免一层死循环 a.b = a
-            res[i] = x[i] === x ? res: Clone(x[i]);
+            res[i] = x[i] === x ? res: CloneRecursive(x[i]);
         }
     } else if (t === 'object') {
         res = {};
         for(let key in x) {
             if (hasOwnProp(x, key)) {
                 // 避免一层死循环 a.b = a
-                res[key] = x[key] === x ? res : Clone(x[key]);
+                res[key] = x[key] === x ? res : CloneRecursive(x[key]);
             }
         }
     }
