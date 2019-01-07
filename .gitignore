@@ -81,3 +81,6 @@ typings/
 
 *debug.log
 package-lock.json
+yarn.lock
+
+dist
