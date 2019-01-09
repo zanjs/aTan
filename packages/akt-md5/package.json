@@ -1,5 +1,5 @@
 {
-  "name": "@akt/md5",
+  "name": "@akt/type",
   "version": "0.0.13-alpha.0",
   "description": "typs",
   "main": "./dist/index.js",
