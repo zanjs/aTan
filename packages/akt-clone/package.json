@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "Julian",
   "license": "MIT",
-  "gitHead": "0f65e729804ed525a977e528581cf4f5206263da",
+  "gitHead": "b17dec939a7b25e23661c8ac11b340faba443f1e",
   "devDependencies": {
     "rimraf": "^2.6.3"
   },
