@@ -1,3 +1,1 @@
-import md5 from "../src/main";
-
-export default md5
+export function type(s: any, strict:boolean): string

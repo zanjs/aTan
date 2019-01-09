@@ -1,1 +1,3 @@
-export function type(s: any, strict:boolean): string
+import md5 from "../src/main";
+
+export default md5
