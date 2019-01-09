@@ -235,7 +235,7 @@ function hexHMACMD5 (k, d) {
   return rstr2hex(rawHMACMD5(k, d))
 }
 
-function md5 (string, key, raw) {
+function md5 (string:string, key?:string, raw?:any) {
   if (!key) {
     if (!raw) {
       return hexMD5(string)

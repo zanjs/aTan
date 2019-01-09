@@ -5,9 +5,11 @@
   "main": "./dist/index.js",
   "typings": "types/index.d.ts",
   "scripts": {
+    "access": "npm publish --access=public",
     "build": "rollup -c rollup.config.js",
     "clear": "rimraf dist"
   },
   "author": "Julian",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "b17dec939a7b25e23661c8ac11b340faba443f1e"
 }
