@@ -1,10 +1,10 @@
 {
   "name": "@akt/format",
-  "version": "0.0.15-alpha.0",
+  "version": "0.0.16-alpha.0",
   "description": "typs",
   "main": "./dist/index.js",
   "typings": "types/index.d.ts",
-  "scripts": { 
+  "scripts": {
     "build": "rollup -c rollup.config.js",
     "clear": "rimraf dist"
   },
