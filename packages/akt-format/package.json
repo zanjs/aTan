@@ -1,0 +1,14 @@
+{
+  "name": "@akt/format",
+  "version": "0.0.15-alpha.0",
+  "description": "typs",
+  "main": "./dist/index.js",
+  "typings": "types/index.d.ts",
+  "scripts": { 
+    "build": "rollup -c rollup.config.js",
+    "clear": "rimraf dist"
+  },
+  "author": "Julian",
+  "license": "MIT",
+  "gitHead": "b17dec939a7b25e23661c8ac11b340faba443f1e"
+}
