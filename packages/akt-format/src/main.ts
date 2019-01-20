@@ -1,4 +1,4 @@
-export function formatCurrency(num) {
+export function formatCurrency(num, dou?:boolean) {
     num = num.toString().replace(/\$|\,/g,'')
     if(isNaN(num)) {
       num = '0'
@@ -13,7 +13,8 @@ export function formatCurrency(num) {
     }
     for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++) {
       // num = num.substring(0,num.length-(4*i+3))+','+
-      num = num.substring(0,num.length-(4*i+3))+
+      const douString = dou ? ',' : ''
+      num = num.substring(0,num.length-(4*i+3))+ douString
       num.substring(num.length-(4*i+3));
     }
   
