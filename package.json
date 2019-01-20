@@ -27,6 +27,5 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
-    "@akt/clone": "0.0.7-alpha.0"
   }
 }
