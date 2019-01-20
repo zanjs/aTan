@@ -14,7 +14,7 @@ export function formatCurrency(num, dou?:boolean) {
     for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++) {
       // num = num.substring(0,num.length-(4*i+3))+','+
       const douString = dou ? ',' : ''
-      num = num.substring(0,num.length-(4*i+3))+ douString
+      num = num.substring(0,num.length-(4*i+3))+ douString +
       num.substring(num.length-(4*i+3));
     }
   
