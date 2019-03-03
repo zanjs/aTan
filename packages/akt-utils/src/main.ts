@@ -1,3 +1,4 @@
+const _toString = Object.prototype.toString
 
 /**
  * 检测当前宿主环境是否是浏览器
@@ -63,4 +64,88 @@ export function cached(fn: Function) {
     const hit = cache[str]
     return hit || (cache[str] = fn(str))
   })
+};
+
+/**
+ * 连字符转驼峰
+ * @param s 
+ */
+export function camelize(s: string):string {
+  const camelizeRE = /-(\w)/g
+  return s.replace(camelizeRE, (_, c)=> c ? c.toUpperCase() :'' )
+}
+
+/**
+ * 将给定变量的值转换为 string 类型并返回
+ * @param val 
+ */
+export function toString (val: any) :string {
+  return val == null
+    ? ''
+    : typeof val === 'object' ? JSON.stringify(val, null, 2)
+    : String(val)
+}
+
+/**
+ * 首字符大写
+ * @param s 
+ * str.charAt(0)获取str的第一项，利用toUpperCase()转换为大写字母，
+ * str.slice(1) 截取除第一项的str部分
+ */
+export function capitalize(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
+/**
+ * 驼峰转连字符
+ * @param s 
+ */
+export function hyphenate(s: string) {
+  const hyphenateRE = /\B([A-Z])/g;
+  return s.replace(hyphenateRE, '-$1').toLocaleUpperCase()
+}
+
+/**
+ * 判断变量是否为原型类型
+ * @param v 
+ */
+export function isPrimitive(v: any): boolean {
+  return (
+    typeof v === 'string' ||
+    typeof v === 'number' ||
+    typeof v === 'symbol' ||
+    typeof v === 'boolean'
+  )
+}
+
+/**
+ * 判断变量是否为正则对象
+ * 使用 Object.prototype.toString 与 '[object RegExp]' 做全等对比
+ * @param v 
+ */
+export function isRegExp(v:any): boolean{
+  return _toString.call(v) === '[object RegExp]'
+}
+
+/**
+ * 区分对象和原始值
+ * @param obj 
+ */
+export function isObject(obj: any): boolean {
+  return obj !== null && typeof obj === 'object'
+}
+
+
+export function makeMap (
+  str: string,
+  expectsLowerCase?: boolean
+): (key: string) => true | void {
+  const map = Object.create(null)
+  const list: Array<string> = str.split(',')
+  for (let i = 0; i < list.length; i++) {
+    map[list[i]] = true
+  }
+  return expectsLowerCase
+    ? val => map[val.toLowerCase()]
+    : val => map[val]
 }
