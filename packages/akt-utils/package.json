@@ -1,0 +1,14 @@
+{
+  "name": "@akt/utils",
+  "version": "0.0.1",
+  "description": "utils",
+  "main": "./dist/index.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "access": "npm publish --access=public",
+    "build": "rollup -c rollup.config.js",
+    "clear": "rimraf dist"
+  },
+  "author": "Julian",
+  "license": "MIT"
+}
