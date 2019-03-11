@@ -1,6 +1,6 @@
 {
   "name": "@akt/format-time",
-  "version": "0.0.18-alpha.0",
+  "version": "0.0.20",
   "description": "typs",
   "main": "./dist/index.js",
   "typings": "types/index.d.ts",

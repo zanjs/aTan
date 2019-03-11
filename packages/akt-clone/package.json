@@ -1,6 +1,6 @@
 {
   "name": "@akt/clone",
-  "version": "0.0.19-alpha.0",
+  "version": "0.0.20",
   "description": "",
   "main": "./dist/index.js",
   "typings": "types/index.d.ts",
