@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "clear": "rimraf dist"
+    "clear": "rimraf dist",
+    "pub": "npm publish --access public"
   },
   "keywords": [],
   "author": "Julian",
