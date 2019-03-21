@@ -10,5 +10,6 @@
     "clear": "rimraf dist"
   },
   "author": "Julian",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "e3fc6ebe52c3171e97575eca27559f8ec8b66a06"
 }
