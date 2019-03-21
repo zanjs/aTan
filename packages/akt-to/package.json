@@ -1,6 +1,6 @@
 {
   "name": "@akt/to",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "typs",
   "main": "./dist/index.js",
   "typings": "types/index.d.ts",

@@ -1,6 +1,6 @@
 {
   "name": "@akt/clone",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "",
   "main": "./dist/index.js",
   "typings": "types/index.d.ts",
@@ -21,7 +21,7 @@
     "rimraf": "^2.6.3"
   },
   "dependencies": {
-    "@akt/type": "^0.0.19-alpha.0",
+    "@akt/type": "^0.0.21",
     "rollup": "^1.0.2"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@akt/array",
-  "version": "0.0.17-alpha.0",
+  "version": "0.0.21",
   "description": "typs",
   "main": "./dist/index.js",
   "typings": "types/index.d.ts",
