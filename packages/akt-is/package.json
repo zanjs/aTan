@@ -1,6 +1,6 @@
 {
   "name": "@akt/is",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "is、check",
   "main": "./dist/index.js",
   "typings": "src/main.ts",
