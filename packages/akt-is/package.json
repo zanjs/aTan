@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "typings": "src/main.ts",
   "scripts": {
-    "access": "npm publish --access=public",
+    "access": "yarn publish --access=public",
     "build": "rollup -c rollup.config.js",
     "clear": "rimraf dist"
   },

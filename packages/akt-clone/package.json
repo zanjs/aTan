@@ -11,7 +11,7 @@
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "clear": "rimraf dist",
-    "pub": "npm publish --access public"
+    "pub": "yarn publish --access public"
   },
   "keywords": [],
   "author": "Julian",

@@ -1,9 +1,9 @@
 {
-  "name": "@akt/utils",
-  "version": "0.0.22",
-  "description": "utils",
+  "name": "@akt/merge",
+  "version": "0.0.2",
+  "description": "merge objectAssign",
   "main": "./dist/index.js",
-  "typings": "types/index.d.ts",
+  "typings": "src/main.ts",
   "scripts": {
     "access": "yarn publish --access=public",
     "build": "rollup -c rollup.config.js",
@@ -11,5 +11,7 @@
   },
   "author": "Julian",
   "license": "MIT",
-  "gitHead": "e3fc6ebe52c3171e97575eca27559f8ec8b66a06"
+  "dependencies": {
+    "yarn": "^1.15.2"
+  }
 }
