@@ -1,0 +1,14 @@
+{
+  "name": "@akt/reg",
+  "version": "0.0.1",
+  "description": "reg",
+  "main": "./dist/index.js",
+  "typings": "src/main.ts",
+  "scripts": {
+    "access": "yarn publish --access=public",
+    "build": "rollup -c rollup.config.js",
+    "clear": "rimraf dist"
+  },
+  "author": "Julian",
+  "license": "MIT"
+}
