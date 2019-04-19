@@ -1,7 +1,7 @@
 {
-  "name": "@akt/style",
+  "name": "@akt/email",
   "version": "0.0.1",
-  "description": "style to json to string",
+  "description": "email tools",
   "main": "./dist/index.js",
   "typings": "src/main.ts",
   "scripts": {
