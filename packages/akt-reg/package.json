@@ -1,6 +1,6 @@
 {
   "name": "@akt/reg",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "reg",
   "main": "./dist/index.js",
   "typings": "src/main.ts",

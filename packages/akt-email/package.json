@@ -1,6 +1,6 @@
 {
   "name": "@akt/email",
-  "version": "0.0.1",
+  "version": "0.0.24",
   "description": "email tools",
   "main": "./dist/index.js",
   "typings": "src/main.ts",

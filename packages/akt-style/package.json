@@ -1,6 +1,6 @@
 {
   "name": "@akt/style",
-  "version": "0.0.1",
+  "version": "0.0.24",
   "description": "style to json to string",
   "main": "./dist/index.js",
   "typings": "src/main.ts",
