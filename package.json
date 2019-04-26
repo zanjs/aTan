@@ -26,6 +26,7 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
+    "@akt/arealist": "^0.0.5",
     "lerna": "^3.13.3"
   }
 }

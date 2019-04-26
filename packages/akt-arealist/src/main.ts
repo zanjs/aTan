@@ -1,4 +1,4 @@
-const areaList = [{
+export const areaList = [{
   "name": "北京",
   "city": [{
     "name": "北京",
@@ -800,8 +800,10 @@ const areaList = [{
     "area": ["中西区", "湾仔区", "东区", "南区", "深水埗区", "油尖旺区", "九龙城区", "黄大仙区", "观塘区", "北区", "大埔区", "沙田区", "西贡区", "元朗区", "屯门区", "荃湾区", "葵青区", "离岛区", "其他"]
   }],
   "json": "xianggang"
-  }]
-let zipCode = [{
+	}]
+	
+
+export const zipCode = [{
 	"id": 2,
 	"name": "北京",
 	"child": [{
@@ -14279,4 +14281,12 @@ let zipCode = [{
 	}]
 }]
 
-export default areaList
+// export default {
+// 	zipCode,
+// 	areaList,
+// 	input: 'src/main.ts',
+//   output: 'dist/index.js',
+//   format: 'esm',
+//   exports: 'named',
+//   sourcemap: true,
+// }
