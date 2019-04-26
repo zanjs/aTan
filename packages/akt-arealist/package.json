@@ -1,6 +1,6 @@
 {
   "name": "@akt/arealist",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "arealist",
   "main": "./dist/index.js",
   "typings": "src/main.ts",
