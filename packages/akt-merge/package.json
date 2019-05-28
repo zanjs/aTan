@@ -1,6 +1,6 @@
 {
   "name": "@akt/merge",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "description": "merge objectAssign",
   "main": "./dist/index.js",
   "typings": "src/main.ts",
