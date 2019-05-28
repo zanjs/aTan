@@ -1,0 +1,14 @@
+{
+  "name": "@akt/await-to",
+  "version": "0.0.1",
+  "description": "typs",
+  "main": "./dist/index.js",
+  "typings": "src/main.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "clear": "rimraf dist",
+    "pub": "yarn publish --access public"
+  },
+  "author": "Julian",
+  "license": "MIT"
+}
