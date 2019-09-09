@@ -12,6 +12,6 @@
   "author": "Julian",
   "license": "MIT",
   "dependencies": {
-    "@akt/arealist": "^0.0.3"
+    "@akt/arealist": "^0.0.25"
   }
 }
