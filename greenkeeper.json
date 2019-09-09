@@ -1,0 +1,25 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "packages/akt-address-parse/package.json",
+        "packages/akt-arealist/package.json",
+        "packages/akt-array/package.json",
+        "packages/akt-await-to/package.json",
+        "packages/akt-clone/package.json",
+        "packages/akt-email/package.json",
+        "packages/akt-format/package.json",
+        "packages/akt-image/package.json",
+        "packages/akt-is/package.json",
+        "packages/akt-md5/package.json",
+        "packages/akt-merge/package.json",
+        "packages/akt-reg/package.json",
+        "packages/akt-style/package.json",
+        "packages/akt-to/package.json",
+        "packages/akt-type/package.json",
+        "packages/akt-utils/package.json"
+      ]
+    }
+  }
+}
